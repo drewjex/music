@@ -127,7 +127,7 @@ html, body, #root {
                     &.selected {
                         border-left: 4px solid #4f88df;
                         background: #444;
-                        font-weight:600;
+                        font-weight:500;
                     }
 
                     &:hover {
@@ -232,10 +232,23 @@ html, body, #root {
 
         .slider-track {
             flex-grow:8;
-            height:2px;
+            height:1px;
             background:#888;
             position:relative;
-            margin-right:60px;
+            margin-right: 60px;
+            margin-top: 23px;
+            margin-left: 60px;
+
+            .song-title {
+                position: absolute;
+                width: 50%;
+                top: -33px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #aaa;
+                font-size: 12px;
+                text-align: center;
+            }
 
             .played {
                 flex-grow:1;
@@ -258,7 +271,7 @@ html, body, #root {
 
         .volume {
             flex-grow:1;
-            height:2px;
+            height:1px;
             background:#888;
             position:relative;
 
