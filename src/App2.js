@@ -44,7 +44,7 @@ class App2 extends Component {
                     <div className='grid'>
                         {[...Array(20)].map((x, i) =>
                             <div className='card' key={i}>
-                                <img src='https://source.unsplash.com/collection/923414/480x480' alt='' />
+                                <img src={`https://source.unsplash.com/collection/923414/${480+i}x${480+i}`} alt='' />
                                 <div className='title'>Title of Song</div>
                                 <div className='subtitle'>Drew Jex</div>
                             </div>
@@ -53,7 +53,12 @@ class App2 extends Component {
                 </div>
             </div>
         </div>
-        <div className='footer'></div>
+        <div className='footer'>
+            <img src='https://source.unsplash.com/collection/923414/500x500' alt='' /> 
+            <FontAwesome name='fast-backward' />     
+            <FontAwesome name='play' className='big' /> 
+            <FontAwesome name='fast-forward' />        
+        </div>
       </div>
     );
   }
