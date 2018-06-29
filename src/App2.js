@@ -58,6 +58,15 @@ class App2 extends Component {
             <FontAwesome name='fast-backward' />     
             <FontAwesome name='play' className='big' /> 
             <FontAwesome name='fast-forward' />        
+            <div className='slider-track'>
+                <div className='played'></div>
+                <div className='slider'></div>
+            </div>
+            <FontAwesome name='volume-up' />  
+            <div className='volume'>
+                <div className='current-volume'></div>
+                <div className='slider'></div>
+            </div>
         </div>
       </div>
     );

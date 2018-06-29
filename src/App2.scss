@@ -211,19 +211,73 @@ html, body, #root {
         width:100%;
         display:flex;
         align-items: center;
+        padding-right: 20px;
 
         img {
             width: 100px;
             padding: 10px;
+            flex-shrink:0;
         }
 
         span {
             color:white;
             font-size:21px;
             margin:20px;
+            flex-shrink:0;
 
             &.big {
                 font-size:24px;
+            }
+        }
+
+        .slider-track {
+            flex-grow:8;
+            height:2px;
+            background:#888;
+            position:relative;
+            margin-right:60px;
+
+            .played {
+                flex-grow:1;
+                height:2px;
+                width: 50%;
+                background:#4f88df;
+                position:absolute;
+            }
+            .slider {
+                border-radius: 50%;
+                background: #efefef;
+                width: 13px;
+                height: 13px;
+                border: 0px solid #efefef;
+                position: absolute;
+                top: -6px;
+                right: 50%;
+            }
+        }
+
+        .volume {
+            flex-grow:1;
+            height:2px;
+            background:#888;
+            position:relative;
+
+            .current-volume {
+                flex-grow:1;
+                height:2px;
+                width: 50%;
+                background:#efefef;
+                position:absolute;
+            }
+            .slider {
+                border-radius: 50%;
+                background: #efefef;
+                width: 13px;
+                height: 13px;
+                border: 0px solid #efefef;
+                position: absolute;
+                top: -6px;
+                right: 50%;
             }
         }
     }
