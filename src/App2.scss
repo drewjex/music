@@ -17,8 +17,9 @@ html, body, #root {
 .container {
   display:flex;
   height:100%;
-  //overflow: hidden;
+  overflow: hidden;
   flex-direction:column;
+  border-top: 1px solid #ccc;
 
   .column-container {
       height:100%;
@@ -67,6 +68,7 @@ html, body, #root {
               display: inline-flex;
               align-items: center;
               justify-content: space-between;
+              box-shadow: 10px 0 10px -3px #ccc;
 
               input {
                 outline: none;
@@ -161,7 +163,9 @@ html, body, #root {
             margin: 1rem;
             margin-bottom: 4rem;
             width: calc((100% / #{$numColumns}) - 2rem);
-            box-shadow: 0px 8px 60px rgba(35,35,35,.5);
+            box-shadow: 0px 8px 60px rgba(35,35,35,.35);
+            border-radius:5px;
+            transition: all .3s ease;
 
             &:before {
                 content:'';
@@ -173,14 +177,14 @@ html, body, #root {
                 position:absolute;
                 bottom: -32px;
                 font-size: 18px;
-                font-weight: 500;
+                font-weight: 600;
             }
 
             .subtitle {
                 position:absolute;
                 bottom: -50px;
                 font-size: 14px;
-                font-weight: 300;
+                font-weight: 400;
                 color:#666;
             }
 
@@ -199,6 +203,13 @@ html, body, #root {
             img {
                 width: 100%;
                 display: block;
+                transition: all .3s ease;
+                filter: brightness(100%);
+
+                &:hover {
+                    filter: brightness(75%);
+                    cursor: pointer;
+                }
             }
           }
       }
@@ -207,7 +218,8 @@ html, body, #root {
     .footer {
         flex-shrink:0;
         height:100px;
-        background: radial-gradient(#333, #222); //#333; //rgba(5,5,5,.8);
+        //background: radial-gradient(#333, #222); //#333; //rgba(5,5,5,.8);
+        background:#222;
         width:100%;
         display:flex;
         align-items: center;
