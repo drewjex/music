@@ -44,7 +44,8 @@ class App2 extends Component {
                     <div className='grid'>
                         {[...Array(20)].map((x, i) =>
                             <div className='card' key={i}>
-                                <img src={`https://source.unsplash.com/collection/923414/${480+i}x${480+i}`} alt='' />
+                                <img src={`https://source.unsplash.com/collection/923414/${480+i}x${480+i}`} alt='' /> 
+                                <FontAwesome name='play-circle' className='on-hover' />
                                 <div className='title'>Title of Song</div>
                                 <div className='subtitle'>Drew Jex</div>
                             </div>
