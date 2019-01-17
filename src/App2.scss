@@ -188,16 +188,18 @@ html, body, #root {
             .title {
                 position:absolute;
                 bottom: -32px;
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 600;
+                letter-spacing: -.25px;
             }
 
             .subtitle {
                 position:absolute;
                 bottom: -50px;
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 400;
                 color:#666;
+                letter-spacing: -.25px;
             }
 
             @media screen and (max-width: 1200px) {
@@ -235,7 +237,7 @@ html, body, #root {
 
     .footer {
         flex-shrink:0;
-        height:100px;
+        height:70px;
         //background: radial-gradient(#333, #222); //#333; //rgba(5,5,5,.8);
         background:#222;
         width:100%;
@@ -244,20 +246,20 @@ html, body, #root {
         padding-right: 20px;
 
         img {
-            width: 100px;
+            width: 70px;
             padding: 10px;
             flex-shrink:0;
         }
 
         span {
             color:white;
-            font-size:21px;
+            font-size:18px;
             margin:20px;
             flex-shrink:0;
             transition: all .1s ease-in-out;
 
             &.big {
-                font-size:24px;
+                font-size:20px;
             }
 
             &:hover {
